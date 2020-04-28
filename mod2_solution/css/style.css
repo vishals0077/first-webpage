@@ -83,11 +83,13 @@
 			
 		}
 		#section1
-		{
+		{	padding-left: 15px;
+			padding-right: 15px;
 			background-color: cyan;
 		}
 		#section2
-		{
+		{	padding-left: 15px;
+			padding-right: 15px;
 			background-color:tomato;	
 		}
 		#item2
@@ -102,7 +104,8 @@
 			border: 1px solid;	
 		}
 		#section3
-		{
+		{	padding-left: 15px;
+			padding-right: 15px;
 			background-color: #7FFF00;
 		}
 		#item3
