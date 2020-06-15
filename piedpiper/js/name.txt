@@ -1,1 +1,8 @@
-vishal sharma
+
+  <div class="col-md-2 col-sm-6" id="pehli"><img src="images.jpg"></div>
+  
+  <div class="col-md-2 col-sm-6" id="dusri"><img src="images5.jpg"></div>
+  <div class="col-md-2 col-sm-6" id="teesri"><img src="images4.jpg"></div>
+  <div class="col-md-2 col-sm-6" id="chauthi"><img src="images 3.jpg"></div>
+  <div class="col-md-2 col-sm-6" id="pachvi"><img src="images 2.jpg"></div>
+  

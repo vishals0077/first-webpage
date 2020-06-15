@@ -24,7 +24,7 @@
 	font-family: sans-serif;
 	font-size: 35px;
 
-	color: black;
+	color: white;
 	text-shadow: 2px 2px rgb(51,153,255);
 }
 
@@ -73,11 +73,19 @@ body
 
 @media(min-width: 992px)
 {
+	#written
+{	
+	margin-bottom: 20px;
+	font-family: sans-serif;
+	font-size: 30px;
 
+	color: white;
+	text-shadow: 2px 2px rgb(51,153,255);
+}
 .nav, .navbar-nav, .navbar-right
 {	
-	float: right;
 	
+	float: right;
 	text-decoration: none;
 
 }
@@ -85,6 +93,7 @@ body
 }
 @media(max-width: 991px)
 {
+	
 	.nav, .navbar-nav, .navbar-right
 {	
 	float: right;
@@ -116,8 +125,27 @@ ul
 {
 	color: white !important;
 }
+	
+   
 
+.col-md-2
+{
+	
+	-ms-flex: 0 0 20% ; 
+    flex: 0 0 20% ;
+    max-width: 20% ;
+	float: left;
 
+}
+#images img
+{	
+	position: relative;
+	height: 150px;
+	width: 100%;
+
+	margin: 10px;
+	border-radius: 5px;
+}
 
 
 

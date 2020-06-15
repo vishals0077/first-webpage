@@ -1,26 +1,32 @@
-(function()
-	{
-
-		$(".collapse").collapse('hide');
-
-// Event handling
-document.addEventListener("DOMContentLoaded",
-  function (event) {
+(function(window)
+  {
+    $('.collapse').collapse('hide');
+    document.addEventListener("DOMContentLoaded",function()
+      {
+    var b="<div class='text-center'><img src='loading.gif'></div>";
+    document.getElementById("images").innerHTML=b;
+    });
     
-    // Unobtrusive event binding
-   
-        console.log("fdg");
-        // Call server to get the name
-        $utils.sendgetrequest("js/name.txt", 
-            function (request) {
-              var name = request.responseText();
-              document.querySelector("#dis").innerHTML = "<h2>Hello " +name + "!</h2>";
-              console.log("gdfgff");
-             
-            });
+        (function()
+          {
+            $ajaxUtils.sendGetRequest("js/name.txt", function(request)
+          {
+            var a=request.responseText;
+            document.getElementById("images").innerHTML=" ";
+            document.getElementById("images").innerHTML=a;
+          });
 
+          })();
         
+      
      
-  });
-	})(window);
+  })();
   
+
+
+
+
+
+
+
+
