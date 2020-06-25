@@ -4000,9 +4000,10 @@ input[type=button].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
   line-height: inherit;
   white-space: nowrap;
+  text-shadow: rgb(50, 242, 7) 2px 2px;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
@@ -10099,8 +10100,14 @@ header.masthead {
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-size: cover;
+  /* Set a specific height */
+  min-height: 500px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+ 
+
+
 }
 header.masthead h1 {
   font-size: 2.25rem;
@@ -10163,4 +10170,69 @@ header.masthead h1 {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
+}
+/*for floating text of joote wala*/
+.ml14 {
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.01em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+ .indicator {
+    position: fixed;
+    display: block;
+    background-color: #D6D35D;
+    height: 10px;
+    top: 0px;
+  }
+
+/*.parallax {
+  
+  background-image: url("img_parallax.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
+.navbar
+{
+ margin-top:10px !important;
+
+}
+#contact
+{
+  background-color: rgb(8,8,7);
+}
+#contact .mt-0 
+{
+  color: white;
+}
+#contact .mb-5
+{
+  color: white !important;
 }
