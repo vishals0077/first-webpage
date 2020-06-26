@@ -10236,3 +10236,9 @@ header.masthead h1 {
 {
   color: white !important;
 }
+
+.img-fluid
+{
+  width: 100%;
+  height: 00px;
+}
