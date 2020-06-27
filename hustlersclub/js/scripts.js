@@ -3,7 +3,8 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
     */
-    (function($) {
+    
+    (function(window) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
@@ -119,5 +120,10 @@ document.onscroll = function () {
 window.onresize = function () {
   initiateHeights();
 }
-
-})(jQuery); // End of use strict
+document.getElementById("homewala").innerHTML="";
+$ajaxUtils.sendGetRequest("snippets/home.html",function(request)
+  {
+    var a= request.responseText;
+    document.getElementById("homewala").innerHTML=a;
+  });
+})(window); // End of use strict
