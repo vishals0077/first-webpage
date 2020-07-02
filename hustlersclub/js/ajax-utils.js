@@ -33,6 +33,17 @@ ajaxUtils.sendGetRequest =
   };
 
 
+ajaxUtils.sendGetRequestnew = 
+  function(requestUrl, responseHandler) {
+    var request = getRequestObject();
+    request.onreadystatechange = 
+      function() { 
+        handleResponse(request, responseHandler); 
+      };
+    request.open("GET", requestUrl, false);
+    request.send(null); // for POST only
+  };
+
 // Only calls user provided 'responseHandler'
 // function if response is ready
 // and not an error

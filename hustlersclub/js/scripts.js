@@ -126,4 +126,45 @@ $ajaxUtils.sendGetRequest("snippets/home.html",function(request)
     var a= request.responseText;
     document.getElementById("homewala").innerHTML=a;
   });
+document.getElementById("loginlink").addEventListener("click",function()
+  {
+
+    document.getElementById("homewala").innerHTML="";
+    $ajaxUtils.sendGetRequestnew("snippets/loginform.html",function(request)
+      {
+        var b= request.responseText;
+        document.getElementById("homewala").innerHTML=b;
+         
+            
+
+      });
+    
+     
+   const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('loginwala');
+
+signUpButton.addEventListener('click', ()=> container.classList.add('right-panel-active')
+);
+signInButton.addEventListener('click', ()=> container.classList.remove('right-panel-active')
+);
+   
+    
+    
+
+
+  });
+
+document.getElementById("movingtext").addEventListener('click',function()
+  {
+    $ajaxUtils.sendGetRequest("snippets/home.html",function(request)
+      {
+        var movtext=request.responseText;
+        document.getElementById("homewala").innerHTML="";
+        document.getElementById("homewala").innerHTML=movtext;
+      });
+  });
+
+
+
 })(window); // End of use strict
