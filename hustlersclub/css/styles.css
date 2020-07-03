@@ -4045,8 +4045,8 @@ input[type=button].btn-block {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: white;
+  border: 1px solid white;
   border-radius: 0.25rem;
 }
 .navbar-toggler:hover, .navbar-toggler:focus {
@@ -10284,9 +10284,12 @@ header.masthead h1 {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     position: relative;
     overflow: hidden;
-    width: 768px;
+   margin-top: 140px;
+   width: 90%;
+
     max-width: 100%;
-    min-height: 480px;
+    min-height: 700px;
+
 }
 .form-container form{
     background: #fff;
@@ -10412,7 +10415,7 @@ header.masthead h1 {
 
 /* Move signin to the right */
 .container.right-panel-active .sign-in-container{
-    transform: translateX(0%);
+    transform: translateX(100%);
 }
 /* Move overlay */
 .container.right-panel-active .overlay-container{
