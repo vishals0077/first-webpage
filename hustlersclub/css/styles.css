@@ -10141,6 +10141,12 @@ header.masthead h1 {
   }
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
   max-width: 1920px;
 }
@@ -10436,4 +10442,144 @@ header.masthead h1 {
 }
 .container.right-panel-active .overlay-right{
     transform: translateX(20%);
+}
+#socialwall
+{
+  margin-top: 120px;
+}
+@media (max-width: 992px) {
+ #creed
+ {
+  width: 90%;
+ }
+}
+#creed
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 400px;
+
+
+}
+.heart{
+    position: relative ;
+    width: 100px;
+    height: 90px;
+    display: inline;
+    
+    
+}
+.heart:before,
+.heart:after{
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 20px;
+    height: 40px;
+     background:grey;
+    -moz-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.heart:after{
+    left: 30px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+.redback
+{
+ position: relative ;
+    width: 100px;
+    height: 90px;
+    display: inline;
+   
+}
+
+.redback:before,
+.redback:after{
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 20px;
+    height: 40px;
+     background:#fc2e5a;
+    -moz-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.redback:after{
+    left: 30px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+.download
+{
+  font-size: 35px;
+  position: relative;
+  margin-left: 100px;
+  top: 20px;
+   border-radius: 10px;
+   
+    background-color: rgb(45, 212, 36);
+    color: black;
+    font-family: 'Pacifico';
+}
+a .credits
+{
+  text-decoration: none;
+  color: black;
+  position: relative;
+  margin: 20px;
+  top: 15px;
+  font-size: 30px;
+}
+#socialwall
+{
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Set a specific height */
+  min-height: 500px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+ 
 }

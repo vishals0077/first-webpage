@@ -120,8 +120,9 @@ document.onscroll = function () {
 window.onresize = function () {
   initiateHeights();
 }
+
 document.getElementById("homewala").innerHTML="";
-$ajaxUtils.sendGetRequest("snippets/home.html",function(request)
+$ajaxUtils.sendGetRequestnew("snippets/home.html",function(request)
   {
     var a= request.responseText;
     document.getElementById("homewala").innerHTML=a;
@@ -155,9 +156,10 @@ signInButton.addEventListener('click', ()=> container.classList.remove('right-pa
 
   });
 
+
 document.getElementById("movingtext").addEventListener('click',function()
   {
-    $ajaxUtils.sendGetRequest("snippets/home.html",function(request)
+    $ajaxUtils.sendGetRequestnew("snippets/home.html",function(request)
       {
         var movtext=request.responseText;
         document.getElementById("homewala").innerHTML="";

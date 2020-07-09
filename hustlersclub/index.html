@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+    	
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -53,7 +55,7 @@
         <div id="homewala">
 
         </div>
-
+        
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container"><div class="small text-center text-muted">Copyright © 2020 - HustlersClub</div></div>
@@ -68,7 +70,39 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <script src="js/ajax-utils.js"></script>
         <script src="js/scripts.js"></script>
+        <script type="text/javascript">
+        	        function showgym()
+        {
+        
 
+            document.getElementById("homewala").innerHTML="";
+            $ajaxUtils.sendGetRequestnew("snippets/gymmotivation.html",function(request)
+              {
+                var gymtext=request.responseText;
+                document.getElementById("homewala").innerHTML=gymtext;
+              });
+          
+        }
+
+        function likepic()
+{
+  var abhi=document.getElementById("likebutton").className;
+    if(abhi==="heart")
+    {
+        document.getElementById("likebutton").classList.remove('heart');
+    document.getElementById("likebutton").classList.add('redback');
+    }
+    else
+    {
+        document.getElementById("likebutton").classList.remove('redback');
+    document.getElementById("likebutton").classList.add('heart');
+    }
+    
+    
+  
+}
+
+        </script>
 
         </div>
 		<div class="marker"></div>
